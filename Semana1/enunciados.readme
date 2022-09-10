@@ -1,0 +1,139 @@
+-------------------------------------------------------SEMANA 1--------------------------------------------------------------------------------------
+*1. Para o item que você decidiu, pense nas características que são importantes para construí-lo. 
+Vamos usar estas características para definir exemplos destes objetos usando o código.
+Você precisará criar pelo menos=  * uma característica String;   * uma característica Number;   * uma característica Boolean;
+
+2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. 
+Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
+
+
+ Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. 
+ Guarde este valor em uma const;
+💡A média deve ser igual à soma dos itens, dividida pelo total de itens.
+
+const mediaAnosAbrigo : (anosAbrigo1 + anosAbrigo2 + anosAbrigo3 + anosAbrigo4 + anosAbrigo5 + anosAbrigo6)/6
+console.log("A média de tempo em que os cachorros estão no abrigo é de " + mediaAnosAbrigo + " anos.")
+
+//4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
+const castrados  : castrado1 && castrado2 && castrado3 && castrado4 && castrado5 && castrado6
+console.log(castrados)
+
+
+6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
+  1. O log deve exibir o dado de nome, título ou afim sempre em  RAS MAIÚSCULAS, como no exemplo abaixo.
+
+  console.log(`Nome: ${ nome1. toUpperCase()}, Idade: ${idade1}, Sexo: ${sexo1}, Porte: ${porte1}, Castrado: ${castrado1}, Tempo no abrigo: ${anosAbrigo1}, Pelagem: ${pelagem1}`)
+  console.log(`Nome: ${ nome2. toUpperCase()}, Idade: ${idade2}, Sexo: ${sexo2}, Porte: ${porte2}, Castrado: ${castrado2}, Tempo no abrigo: ${anosAbrigo2}, Pelagem: ${pelagem2}`)
+  console.log(`Nome: ${ nome3. toUpperCase()}, Idade: ${idade3}, Sexo: ${sexo3}, Porte: ${porte3}, Castrado: ${castrado3}, Tempo no abrigo: ${anosAbrigo3}, Pelagem: ${pelagem3}`)
+  console.log(`Nome: ${ nome4. toUpperCase()}, Idade: ${idade4}, Sexo: ${sexo4}, Porte: ${porte4}, Castrado: ${castrado4}, Tempo no abrigo: ${anosAbrigo4}, Pelagem: ${pelagem4}`)
+  console.log(`Nome: ${ nome5. toUpperCase()}, Idade: ${idade5}, Sexo: ${sexo5}, Porte: ${porte5}, Castrado: ${castrado5}, Tempo no abrigo: ${anosAbrigo5}, Pelagem: ${pelagem5}`)
+  console.log(`Nome: ${ nome6. toUpperCase()}, Idade: ${idade6}, Sexo: ${sexo6}, Porte: ${porte6}, Castrado: ${castrado6}, Tempo no abrigo: ${anosAbrigo6}, Pelagem: ${pelagem6}`)
+
+
+---------------------------------------------------------SEMANA 2 ------------------------------------------------------------------------------------
+
+1. Transforme os itens que criamos nas últimas semanas em objetos.
+Exemplo
+//ANTES
+  const nome1 = "Fulano";
+  const idade1 = 33;
+  const verificouEmail1 = false; 
+//DEPOIS
+objeto1 = { 
+    nome: "Fulano", 
+    idade: 33,
+    verificouEmail: false
+  } 
+2. Crie um array para guardar os objetos. Este array deve estar vazio, 
+por enquanto;
+3. Adicione os objetos criados no item 1 ao array de objetos criado no 
+item 2, utilizando o push() Ao fim, você deve ter algo parecido com isso:
+[
+  { 
+    nome: "Fulano", 
+    idade: 33,
+    verificouEmail: false
+  },
+  { 
+    nome: "Beltrano", 
+    idade: 41,
+    verificouEmail: true
+  },
+  { 
+    nome: "Fulano", 
+    idade: 27,
+    verificouEmail: true
+  },
+4. Altere o item “Adicione os novos objetos no array de objetos, 
+utilizando o push()” (item 3), para criar uma verificação antes de 
+dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
+5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e 
+não faça o push
+
+---------------------------------------------------------SEMANA 3------------------------------------------------------------------------------------
+
+1.Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, altere a forma que a característica de array dos 
+itens seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
+💡 Chamamos este processo de reescrever um código já escrito, de refatoração.
+Exemplo:
+//ANTES 
+FULANO
+idade: 33
+verificou email?: false
+projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"] 
+
+//DEPOIS
+FULANO
+idade: 33
+verificou email?: false
+projetos: "Projeto de HTML,Projeto de CSS,Projeto React" 
+
+2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. Ou seja, você não deve mais imprimir individualmente cada item do relatório. 
+Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+//ANTES 
+console.log(elementos[0].item);
+
+//DEPOIS
+FULANO
+for(elemento in elementos){
+  console.log(elemento.item);
+}
+3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os 
+itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
+---------------------------------------------------------SEMANA 4-----------------------------------------------------------------------------------
+1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens;
+2. Crie um cabeçalho, uma seção principal, e um footer para a página;
+3. Na seção principal. Crie duas divisões. Uma deve possuir um input e um botão. A outra, deve possuir sections para criar os itens da lista;
+4. Crie uma section para cada item da lista;
+5. Para cada um dos três itens criados deve possuir todas as informações do array de objetos. As informações devem estar elencadas como lista não ordenada. 
+    Esta tela não precisa interagir com o JavaScript, tendo seus dados escritos diretamente nos elementos.
+6. Transforme o nome/título do item em um link para um artigo sobre este item (pode ser do google, de algum blog ou da Wikipédia)
+💡 Recomendamos adicionar imagens a seus itens agora. Ao fazer isso, lembre-se de criar mais uma propriedade String nos seus objetos, para guardar 
+    o caminho do link até a imagem.
+A partir do nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:
+1. Estilize o cabeçalho da sua página com o mesmo título que está no <title>;
+2. Estilize o rodapé para sua página, e nele, coloque suas informações de contato (nome e github);
+3. Estilize a lista criada na semana passada, seguindo o padrão enviado;
+
+---------------------------------------------------------SEMANA 5-----------------------------------------------------------------------------------
+1. Transforme os elementos da lista de itens em Flexbox;
+OU
+1. Transforme o container da tela toda em Flexbox;
+Depois disso:
+1. Transforme os elementos da lista de itens em Grid;
+2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
+OU
+1. Transforme o container da tela toda em Grid;
+2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
+
+---------------------------------------------------------SEMANA 6-----------------------------------------------------------------------------------
+1. Altere seu código para que a tela de lista de itens crie os elementos da lista através de manipulação do DOM.
+Atualmente, seus elementos estão criados no HTML e no CSS de forma estática, sem que exista interação entre HTML e CSS e o Script que criamos. 
+A ideia é que agora, os dados que compõem os elementos HTML devem ser criados a partir do nosso código JS. Para isso, devemos manipular 
+os objetos do HTML e do CSS utilizando o DOM.
+
+---------------------------------------------------------SEMANA 7-----------------------------------------------------------------------------------
+1. Utilize a função de busca criada no item 2 da semana 6 para fazer com que ao digitar um campo no input e apertar o botão, apenas os itens 
+com nome igual ao da busca sejam renderizados na tela.
