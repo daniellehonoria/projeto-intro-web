@@ -22,10 +22,13 @@
     <input type="text">
     </input>
     <main>
-        <section>
+        <div class="container">
+
+        <section class="bolinha">
             <img src="./fotos/bolinha.jpg" alt="Bolinha">
-            <ul>
-                <li><a href="https://ilm.org.br/adote/tproduct/326151795-199824655111-adote-o-bolinha" target="_blank">Bolinha</a> </li>
+           
+            <ul id="cachorro">
+                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-199824655111-adote-o-bolinha" target="_blank">Bolinha</a></h3>
                 <li>Idade: 10 anos</li>
                 <li>Sexo: Macho</li>
                 <li>Porte: Médio</li>
@@ -34,10 +37,11 @@
                 <li>Castrado: Não</li>
             </ul>
         </section>
-        <section>
+        <section class="buzina">
             <img src="./fotos/buzina.jpg" alt="Buzina">
-            <ul>
-                <li><a href="https://ilm.org.br/adote/tproduct/326151795-345284919221-adote-a-buzina" target="_blank">Buzina</a></li>
+
+            <ul id="cachorro">
+                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-345284919221-adote-a-buzina" target="_blank">Buzina</a></h3>
                 <li>Idade: 5 anos</li>
                 <li>Sexo: Fêmea</li>
                 <li>Porte: Médio</li>
@@ -47,10 +51,10 @@
             </ul>
         </section>
 
-        <section>
+        <section class="thor">
             <img src="fotos/thor.jpg" alt="Thor">
-                <ul>
-                    <li><a href="https://ilm.org.br/adote/tproduct/326151795-991977933711-adote-o-thor" target="_blank">Thor</a></li>
+                <ul id="cachorro">
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-991977933711-adote-o-thor" target="_blank">Thor</a></h3>
                     <li>Idade: 5 anos</li>
                     <li>Sexo: Macho</li>
                     <li>Porte: Grande</li>
@@ -59,10 +63,10 @@
                     <li>Castrado: Sim</li>
         </section>
 
-        <section>
+        <section class="diego">
             <img src="fotos/diego.jpg" alt = "Diego">
-            <ul>
-                <li><a href="https://ilm.org.br/adote/tproduct/326151795-259044191611-adote-o-diego" target="_blank">Diego</a></li>
+            <ul id="cachorro">
+                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-259044191611-adote-o-diego" target="_blank">Diego</a></h3>
                 <li>Idade: 10 anos</li>
                 <li>Sexo: Macho</li>
                 <li>Porte: Grande</li>
@@ -71,10 +75,11 @@
                 <li>Castrado: Sim</li>
         </section>
 
-        <section>
+        <section class="clovis">
             <img src="fotos/clovis.jpg" alt = "Clovis"> 
-            <ul>
-                <li><a href="https://ilm.org.br/adote/tproduct/326151795-611270560251-adote-clvis" target="_blank">Clovis</a></li>
+            
+            <ul id="cachorro">
+                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-611270560251-adote-clvis" target="_blank">Clovis</a></h3>
                 <li>Idade: 10 anos</li>
                 <li>Sexo: Macho</li>
                 <li>Porte: Grande</li>
@@ -83,40 +88,43 @@
                 <li>Castrado: Sim</li>
         </section>
 
-        <section>
+        <section class="rex">
             <img src="fotos/rex.jpg" alt="Rex">
-            <ul>
-                <li><a href="https://ilm.org.br/adote/tproduct/326151795-951394079561-adote-o-rex" target="_blank">Rex</a></li>
-                <li>Idade: 10 anos</li>
+            <ul id="cachorro">
+                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-951394079561-adote-o-rex" target="_blank">Rex</a></h3>                <li>Idade: 10 anos</li>
                 <li>Sexo: Macho</li>
                 <li>Porte: Grande</li>
                 <li>Tempo no abrigo: 2 anos</li>
                 <li>Pelagem: Marrom e preto</li>
                 <li>Castrado: Não</li>
         </section>
-
+    </div>
     </main>
 </body>
 <footer>
-    <h2>Criado por Danielle Boer. </h2>
+    <h3>Criado por Danielle Boer. </h3>
     <p>Cachorros disponíveis para adoção no <a href="https://ilm.org.br/" target="_blank">Instituto Luisa Mell</a></p>
 </footer>
 
 </html>
-<!-- 
-OK 1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens; 
-OK 2. Crie um cabeçalho, uma seção principal, e um footer para a página;
-OK 3. Na seção principal. Crie duas divisões. Uma deve possuir um input e um botão. A outra, deve possuir sections para criar os itens da lista;
-OK 4. Crie uma section para cada item da lista;
-OK 5. Para cada um dos três itens criados deve possuir todas as informações do array de objetos. As informações devem estar elencadas 
-como lista não ordenada. Esta tela não precisa interagir com o JavaScript, tendo seus dados escritos diretamente nos elementos.
-OK 6. Transforme o nome/título do item em um link para um artigo sobre este item (pode ser do google, de algum blog ou da Wikipédia) -->
+<!-- SEMANA 5
+
+A partir da página HTML que foi criada na semana 4, faça a seguintes alterações:
+
+Parte1 - aplicando Flexbox:
+1. Transforme os elementos da lista de itens em Flexbox;
+OU
+1. Transforme o container da tela toda em Flexbox;
 
 
-<!-- 
-Recomendamos adicionar imagens a seus itens agora. Ao fazer isso, lembre-se de criar mais uma 
-propriedade String nos seus objetos, para guardar o caminho do link até a imagem.
-A partir do nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:
-1. Estilize o cabeçalho da sua página com o mesmo título que está no <title>;
-2. Estilize o rodapé para sua página, e nele, coloque suas informações de contato (nome e github);
-3. Estilize a lista criada na semana passada, seguindo o padrão enviado; -->
+Parte2 - aplicando Grid:
+Depois disso:
+
+1. Transforme os elementos da lista de itens em Grid;
+2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
+
+OU
+1. Transforme o container da tela toda em Grid;
+2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
+
+Compare os resultados destas alterações e escolha a que você sentir que funciona melhor. -->
