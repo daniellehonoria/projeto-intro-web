@@ -1,12 +1,10 @@
-
-
 main{
     display: flex;
-    background-color: rgb(19, 130, 132);
+    background-image: url('./fotos/fundo.jpg');
     
 }
 .container{
-    display: flex;
+    display: grid;
     flex-direction: column;
     width: 80%;
     padding: 5vh;
@@ -20,51 +18,63 @@ main{
     float:left;
     height: 200px;
     width: 300;
-    border: 1px solid;
+    border: 3px solid;
     align-self: flex-end;
     margin: 10px;
 }
 .bolinha{
-    border: 1px solid;
-    text-align: center;
+    border: 3px solid black;
     margin: 10px;
     text-align: justify;
     justify-content: flex-end;
+    background-color:white ;
+    color: black;
+
 
 }
 .buzina{
-    border: 1px solid;
-    text-align: center;
+    border: 3px solid black;
     margin: 10px;
     text-align: justify;
+    justify-content: flex-end;
+    background-color:white ;
+    color: black;
 
 }
 .thor{
-    border: 1px solid;
-    text-align: center;
+    border: 3px solid black;
     margin: 10px;
     text-align: justify;
+    justify-content: flex-end;
+    background-color:white ;
+    color: black;
 
 }
 .diego{
-    border: 1px solid;
-    text-align: center;
+    border: 3px solid black;
     margin: 10px;
     text-align: justify;
+    justify-content: flex-end;
+    background-color:white ;
+    color: black;
 
 }
 .clovis{
-    border: 1px solid;
-    text-align: center;
+    border: 3px solid black;
     margin: 10px;
     text-align: justify;
+    justify-content: flex-end;
+    background-color:white ;
+    color: black;
 
 }
 .rex{
-    border: 1px solid;
-    text-align: center;
+    border: 3px solid black;
     margin: 10px;
     text-align: justify;
+    justify-content: flex-end;
+    background-color:white ;
+    color: black;
 
 }
 
@@ -72,3 +82,30 @@ main{
     float:left;
 
 }
+#dog{
+    color:orange;
+    font-size: 4vh;
+}
+
+/*SEMANA 5
+
+A partir da página HTML que foi criada na semana 4, faça a seguintes alterações:
+
+OK =========Parte1 - aplicando Flexbox:
+1. Transforme os elementos da lista de itens em Flexbox;
+OU
+1. Transforme o container da tela toda em Flexbox;
+
+
+Parte2 - aplicando Grid:
+Depois disso:
+
+1. Transforme os elementos da lista de itens em Grid;
+2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
+
+OU
+1. Transforme o container da tela toda em Grid;
+2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
+
+Compare os resultados destas alterações e escolha a que você sentir que funciona melhor.*/
+
