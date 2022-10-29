@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cachorros para adoção</title>
     <!--1.título lista de itens-->
-    <script src="adote.js"></script>
+    <script src="adote.js" defer></script>
     <link rel="stylesheet" href="adote.css">
 </head>
 
@@ -15,116 +15,84 @@
     <header>
         <!--2. cabeçalho-->
         <h1>Cachorros para adoção</h1>
+        <section id="pesquisa">
+        <input class="input" id="name" name="name" type="text"placeholder="Digite o nome de um cachorro"></input>
+        <input type="submit" id="send" value="Pesquisar" onclick="pesquisaCachorro()"class="button">
+            </section>
     </header>
-    <button>
 
-    </button>
-    <input type="text">
-    </input>
     <main>
-        <div class="container">
+        <div class="listaCachorros" id="idListaCachorro">
 
-        <section class="bolinha">
-            <img src="./fotos/bolinha.jpg" alt="Bolinha">
-           
-            <ul id="cachorro">
-                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-199824655111-adote-o-bolinha" target="_blank" id="dog">Bolinha</a></h3>
-                <li>Idade: 10 anos</li>
-                <li>Sexo: Macho</li>
-                <li>Porte: Médio</li>
-                <li>Tempo no abrigo: 1 ano</li>
-                <li>Pelagem: Caramelo e branco</li>
-                <li>Castrado: Não</li>
-            </ul>
-        </section>
-        <section class="buzina">
-            <img src="./fotos/buzina.jpg" alt="Buzina">
+            <section class="nomeIgual" id="todosOsCachorros">
+                <img src="./fotos/bolinha.jpg" onmouseover="this.src='./fotos/bolina2.png'"
+                    onmouseout="this.src='./fotos/bolinha.jpg'" alt="Bolinha" id="fotoBolinha" onclick="">
+                <ul class="cachorro" id="bolinhaID">
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-199824655111-adote-o-bolinha"
+                            target="_blank" id="dog">Bolinha</a></h3>
 
-            <ul id="cachorro">
-                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-345284919221-adote-a-buzina" target="_blank" id="dog">Buzina</a></h3>
-                <li>Idade: 5 anos</li>
-                <li>Sexo: Fêmea</li>
-                <li>Porte: Médio</li>
-                <li>Tempo no abrigo: 2 anos</li>
-                <li>Pelagem: Pretp e branco</li>
-                <li>Castrado: Sim</li>
-            </ul>
-        </section>
+                </ul>
+            </section>
+            <section class="nomeIgual" id="todosOsCachorros">
+                <img src="./fotos/buzina.jpg" onmouseover="this.src='./fotos/buzina2.png'"
+                    onmouseout="this.src='./fotos/buzina.jpg'" alt="Buzina" id="fotoBuzina">
+                <ul class="cachorro" id="buzinaID">
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-345284919221-adote-a-buzina"
+                            target="_blank" id="dog">Buzina</a></h3>
 
-        <section class="thor">
-            <img src="fotos/thor.jpg" alt="Thor">
-                <ul id="cachorro">
-                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-991977933711-adote-o-thor" target="_blank" id="dog">Thor</a></h3>
-                    <li>Idade: 5 anos</li>
-                    <li>Sexo: Macho</li>
-                    <li>Porte: Grande</li>
-                    <li>Tempo no abrigo: 3 anos</li>
-                    <li>Pelagem: Caramelo e branco</li>
-                    <li>Castrado: Sim</li>
-        </section>
+                </ul>
+            </section>
+            <section class="nomeIgual" id="todosOsCachorros">
+                <img src="fotos/thor.jpg" onmouseover="this.src='./fotos/thor2.png'"
+                    onmouseout="this.src='./fotos/thor.jpg'" alt="Thor" id="fotoThor">
+                <ul class="cachorro" id="thorID">
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-991977933711-adote-o-thor" target="_blank"
+                            id="dog">Thor</a></h3>
 
-        <section class="diego">
-            <img src="fotos/diego.jpg" alt = "Diego">
-            <ul id="cachorro">
-                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-259044191611-adote-o-diego" target="_blank" id="dog">Diego</a></h3>
-                <li>Idade: 10 anos</li>
-                <li>Sexo: Macho</li>
-                <li>Porte: Grande</li>
-                <li>Tempo no abrigo: 7 anos</li>
-                <li>Pelagem: Preto e branco</li>
-                <li>Castrado: Sim</li>
-        </section>
+            </section>
 
-        <section class="clovis">
-            <img src="fotos/clovis.jpg" alt = "Clovis"> 
-            
-            <ul id="cachorro">
-                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-611270560251-adote-clvis" target="_blank" id="dog">Clovis</a></h3>
-                <li>Idade: 10 anos</li>
-                <li>Sexo: Macho</li>
-                <li>Porte: Grande</li>
-                <li>Tempo no abrigo: 3 anos</li>
-                <li>Pelagem: Cinza, caramelo e branco</li>
-                <li>Castrado: Sim</li>
-        </section>
+            <section class="nomeIgual" id="todosOsCachorros">
+                <img src="fotos/diego.jpg" onmouseover="this.src='./fotos/diego2.png'"
+                    onmouseout="this.src='./fotos/diego.jpg'" alt="Diego" id="fotoDiego">
+                <ul class="cachorro" id="diegoID">
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-259044191611-adote-o-diego" target="_blank"
+                            id="dog">Diego</a></h3>
 
-        <section class="rex">
-            <img src="fotos/rex.jpg" alt="Rex">
-            <ul id="cachorro">
-                <h3><a href="https://ilm.org.br/adote/tproduct/326151795-951394079561-adote-o-rex" target="_blank" id="dog">Rex</a></h3>                <li>Idade: 10 anos</li>
-                <li>Sexo: Macho</li>
-                <li>Porte: Grande</li>
-                <li>Tempo no abrigo: 2 anos</li>
-                <li>Pelagem: Marrom e preto</li>
-                <li>Castrado: Não</li>
-        </section>
-    </div>
+            </section>
+
+            <section class="nomeIgual" id="todosOsCachorros">
+                <img src="fotos/clovis.jpg" onmouseover="this.src='./fotos/clovis2.png'"
+                    onmouseout="this.src='./fotos/clovis.jpg'" alt="Clovis" id="fotoClovis">
+
+                <ul class="cachorro" id="clovisID">
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-611270560251-adote-clvis" target="_blank"
+                            id="dog">Clovis</a></h3>
+
+            </section>
+
+            <section class="nomeIgual" id="todosOsCachorros">
+                <img src="fotos/rex.jpg" onmouseover="this.src='./fotos/rex2.png'"
+                    onmouseout="this.src='./fotos/rex.jpg'" alt="Rex" id="foto">
+                <ul class="cachorro" id="rexID" >
+                    <h3><a href="https://ilm.org.br/adote/tproduct/326151795-951394079561-adote-o-rex" target="_blank"
+                            id="dog">Rex</a></h3>
+
+            </section>
+        </div>
     </main>
 </body>
 <footer>
-    <h3>Criado por Danielle Boer. </h3>
+    <h3>Criado por Danielle Boer. </h3> 
     <p>Cachorros disponíveis para adoção no <a href="https://ilm.org.br/" target="_blank">Instituto Luisa Mell</a></p>
 </footer>
 
 </html>
-<!-- SEMANA 5
+<!-- Semana 6
+1. Altere seu código para que a tela de lista de itens crie os elementos da lista através de manipulação do DOM.
 
-A partir da página HTML que foi criada na semana 4, faça a seguintes alterações:
+Atualmente, seus elementos estão criados no HTML e no CSS de forma estática, sem que exista interação entre 
+HTML e CSS e o Script que criamos. A ideia é que agora, os dados que compõem os elementos HTML devem ser criados 
+a partir do nosso código JS. Para isso, devemos manipular os objetos do HTML e do CSS utilizando o DOM.
 
-Parte1 - aplicando Flexbox:
-1. Transforme os elementos da lista de itens em Flexbox;
-OU
-1. Transforme o container da tela toda em Flexbox;
-
-
-Parte2 - aplicando Grid:
-Depois disso:
-
-1. Transforme os elementos da lista de itens em Grid;
-2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
-
-OU
-1. Transforme o container da tela toda em Grid;
-2. Faça com que a página se torne responsiva, exibindo corretamente as informações em desktop e móvel;
-
-Compare os resultados destas alterações e escolha a que você sentir que funciona melhor. -->
+2. Utilize a função de busca criada no item 2 da semana 6 para fazer com que ao digitar um campo no input e 
+apertar o botão, apenas os itens com nome igual ao da busca sejam renderizados na tela. -->
